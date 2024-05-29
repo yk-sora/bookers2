@@ -1,7 +1,7 @@
 <p id="notice"></p>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md col-lg-5 px-5 px-sm-0 mx-auto">
+      <div class="col-sm-12 col-md8 col-lg-5 px-5 px-sm-0 mx-auto">
         <h2>User info</h2>
 
 <% if @user.errors.any? %>
@@ -16,7 +16,7 @@
 <%= form_with model: @user do |f| %>
 <div class="form-group">
   <label for="inputName">Name</label><br>
-  <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:""%>
+  <%= f.text_field :name, class: "form-control", id:"inputName", placeholder:""%>
 </div>
 
 <div class="form-group">
@@ -26,7 +26,7 @@
   
 <div class="form-group">
   <label for="inputIntroduction">Introduction</label><br>
-  <%= f.text_area :introduction, autofocus: true, id:"inputIntroduction", placeholder:""%><br>
+  <%= f.text_area :introduction, class: "form-control", id:"inputIntroduction", placeholder:""%><br>
 </div>
 
 <div class="form-group">
